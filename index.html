@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="container-slider">
+            <div class="text-top-left">
+                <span id="text-important">Super destacado</span>
+            </div>
+
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/1.jpg" style="width:100%; ">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/2.jpg" style="width:100%; ">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/3.jpg" style="width:100%; ">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" id="prev-slide">&#10094;</a>
+                <a class="next" id="next-slide">&#10095;</a>
+                <div class="text-top-right">
+                    <svg id="icon-heart"></svg>
+                </div>
+            </div>
+        </div>
+        <div class="container-info">
+            <div class="info">
+                <p class="title">Si vas a utilizar un pasaje Lorem Impusm, necesitas estar seguro</p>
+                <p class="location">
+                    <svg id="icon-gps"></svg><span class="location-address">Juan Francisco Seguí 3900,</span> <span class="location-city">Palermo Chico, Palermo</span>
+                </p>
+                <p class="description">
+                    Lorem Impus es simplemente el texto de relleno de las imprentas y archivos de texto.
+                    Lorem Impsum ha sido el texto de relleno estandar de las industrias desde el año 1500,
+                    cuando un impresor (N. del T. persona que se dedica a la empresa).
+                </p>
+                <p class="prices">
+                    <span id="price-info">U&dollar;S &nbsp;<span class="editText" id="price-total" title="Modificar precio">1.400.000</span> <input class="editText" id="price-total-edit" type="number" value=""></span>
+                    <span class="sup-info">$/m<sup>2</sup><span id="sup-total">3.680</span></span>
+                </p>
+            </div>
+            <div class="details">
+                <ul class="detail-list">
+                    <li>380 m²</li>
+                    <li>3 Dormitorios</li>
+                    <li>2 Baños</li>
+                    <li>2 Cocheras</li>
+                </ul>
+
+                <div class="contact">
+                    <a href="#" id="open-modal">CONTACTAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <a href="#" title="Close" class="close" id="close-modal">X</a>
+            <h2 class="title">Para ser contactado por favor ingrese su direccion de correo electronico.</h2>
+            <form action="" id="formContact">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" id="email" placeholder="myemail@gmail.com">
+                </div>
+                <span id="error-email" class="error">Por favor ingrese un email valido</span>
+                <div class="form-group">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/flexslider/jquery.flexslider-min.js"></script>
+<script src="js/custom.js"></script>
+</html>

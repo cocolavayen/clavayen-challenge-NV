@@ -1,0 +1,10 @@
+{
+  "name": "challengeNavent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "jquery": "^3.4.1"
+  }
+}
