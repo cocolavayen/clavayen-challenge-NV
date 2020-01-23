@@ -114,16 +114,9 @@ window.onload = function() {
     }
     /**************************************/
 
-    function loadValues() {
-        loadFavorite();
-        loadPrice();
-    }
-
-    loadValues();
-
-
     /***************modal******************/
     function sendEmailContact() {
+        event.preventDefault();
         if (isValidForm()){
             document.getElementsByClassName("modalDialog")[0].style.display = "none";
         }
@@ -153,6 +146,15 @@ window.onload = function() {
         showHideModal();
         document.getElementById('modal').style.display = 'none';
     }
+
+    /************************************/
+
+    function loadValues() {
+        loadFavorite();
+        loadPrice();
+    }
+
+    loadValues();
 
     price.addEventListener("click", changePrice)
     priceEdit.addEventListener("keydown", eventKeyDown)
